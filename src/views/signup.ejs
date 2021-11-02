@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send your wish!!!</title>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+      <style>
+      
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+  
+  :root {
+      --error-color: #dc3545;
+      --success-color: #28a745;
+      --warning-color: #ffc107;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body{
+          background-image: url('../image/diwali2.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .container{
+          margin-top: 15%;
+        }
+        .container h1{
+          color: aliceblue;
+        }
+        .form-group{
+          margin-left: 33%;
+          width: 35%;
+        }
+        .img{
+          width:250px;
+          height:300px;
+        }
+  </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="text-center">
+            <br>
+             Send Your Wish.... 
+          </h1>
+          <br>
+          <form action="/sendemail" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input class="form-control" type="email" name="to" required placeholder="Email here">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="subject" placeholder="Your loved one's name..." required id="">
+            </div>
+            <!-- <div class="form-group">
+               <textarea required class="form-control" name="body" id="" cols="30" rows="10" placeholder="Body:"></textarea>
+            </div> -->
+            <!-- <label for="attachment">Attachment:</label> -->
+            <!-- <div class="form-group">
+            <input type="file" required class="form-control" name="image" id="">
+                </div> -->
+                <!-- <img src="cid:unique@nodemailer.com" width="250" height="250" /> -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-block btn-danger">
+                    Create
+                </button>
+            </div>
+        </form>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>

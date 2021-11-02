@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Your Wish..</title>
+    <link rel="stylesheet" href="../public/css/signup.css">
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-image: url('../image/diwali.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+/* body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; *
+} */
+
+.container {
+    /* background-color: rgba(114, 18, 18, 0.699); */
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    margin-top: 40%;
+    margin-left: 1%;
+}
+
+.form {
+    padding: 10px 20px;
+   
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+.form-field  h3{
+   color: yellow;
+
+}
+
+.form-field label {
+    display: block;
+    /* color: #777; */
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    /* border: solid 2px #8a0d0d; */
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+#myvid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- <video autoplay muted loop id="myvid" src="/videos/Diwali Wishes _ Deepavali _ Festival Of Lights Animated.mp4" type="video/mp4"></video> -->
+  
+    <div class="container">
+            <form>
+            <div class="form-field">
+                <input type="input" class="form__field" placeholder="Your Good Name" name="name" id='name' required />
+            </div>
+    
+          <div class="form-field">
+        <div class="d-flex justify-content-center links">
+           <h3> Send wish to your loved ones..</h3><a href="/login/signup"><h1>Send Gifts!!!</h1></a>
+        </div>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
