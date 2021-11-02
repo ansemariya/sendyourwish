@@ -97,7 +97,7 @@ app.post('/sendemail',(req,res) => {
                 from: 'sendwishtodears@gmail.com',
                 to: to,
                 subject:subject,
-                html: 'Rejoice on this blessed occasion by spreading joy with your family and friends. Wish you all a Happy Diwali & a prosperous year ahead!!!: <img src="cid:unique@nodemailer.com"/>',
+                html: 'Rejoice on this blessed occasion by spreading joy with your family and friends. Wish you all a Happy Diwali & a prosperous year ahead!!!:Share it with your friends:https://sendyourwish.herokuapp.com/ <img src="cid:unique@nodemailer.com"/>',
                 attachments: [
                   {
                    
@@ -112,7 +112,7 @@ app.post('/sendemail',(req,res) => {
                 if (error) {
                   console.log(error);
                 } else {
-                    // alert("Awsome!!!Your wish reached there.Send another wish here....");
+                    // alert(".Awsome!!!Your wish reached there.Send another wish here...");
                     return res.redirect('/new')
                 //    console.log('Email sent: ' + info.response);
                   fs.unlink(path,function(err){
